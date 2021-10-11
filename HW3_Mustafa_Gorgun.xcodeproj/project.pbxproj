@@ -39,6 +39,9 @@
 		2B6B95E42713E256003CC015 /* GenericDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B95E32713E256003CC015 /* GenericDataProtocol.swift */; };
 		2B6B95E72713E9DB003CC015 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B95E62713E9DB003CC015 /* ItemTableViewCell.swift */; };
 		2B6B95E92713EB82003CC015 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B95E82713EB82003CC015 /* BaseTableViewCell.swift */; };
+		2B6B95F72713F12A003CC015 /* LabelDistributionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B95F42713F12A003CC015 /* LabelDistributionData.swift */; };
+		2B6B95F82713F12A003CC015 /* LabelPackComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B95F52713F12A003CC015 /* LabelPackComponentData.swift */; };
+		2B6B95F92713F12A003CC015 /* LabelPackComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B95F62713F12A003CC015 /* LabelPackComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +97,9 @@
 		2B6B95E32713E256003CC015 /* GenericDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataProtocol.swift; sourceTree = "<group>"; };
 		2B6B95E62713E9DB003CC015 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		2B6B95E82713EB82003CC015 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		2B6B95F42713F12A003CC015 /* LabelDistributionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelDistributionData.swift; sourceTree = "<group>"; };
+		2B6B95F52713F12A003CC015 /* LabelPackComponentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelPackComponentData.swift; sourceTree = "<group>"; };
+		2B6B95F62713F12A003CC015 /* LabelPackComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelPackComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +274,7 @@
 		2B6B95DA2713CD80003CC015 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2B6B95F32713F12A003CC015 /* LabelPackComponent */,
 				2B6B95E52713E9BA003CC015 /* ItemComponents */,
 				2B6B95DE2713D355003CC015 /* SampleTest */,
 				2B6B95DB2713CDA0003CC015 /* ItemListViewComponents */,
@@ -298,6 +305,16 @@
 				2B6B95E62713E9DB003CC015 /* ItemTableViewCell.swift */,
 			);
 			path = ItemComponents;
+			sourceTree = "<group>";
+		};
+		2B6B95F32713F12A003CC015 /* LabelPackComponent */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B95F42713F12A003CC015 /* LabelDistributionData.swift */,
+				2B6B95F52713F12A003CC015 /* LabelPackComponentData.swift */,
+				2B6B95F62713F12A003CC015 /* LabelPackComponent.swift */,
+			);
+			path = LabelPackComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,12 +468,15 @@
 				2B6B95E22713E0BB003CC015 /* ItemListProtocol.swift in Sources */,
 				2B6B95D72713C78E003CC015 /* CharacterListViewBuilder.swift in Sources */,
 				2B6B95BC2713A849003CC015 /* MainTabBarBuilder.swift in Sources */,
+				2B6B95F82713F12A003CC015 /* LabelPackComponentData.swift in Sources */,
 				2B6B95CC2713B29A003CC015 /* FavoriteViewBuilder.swift in Sources */,
 				2B6B95DD2713CDC2003CC015 /* ItemListView.swift in Sources */,
 				2B6B95A827134F63003CC015 /* MainViewModel.swift in Sources */,
+				2B6B95F92713F12A003CC015 /* LabelPackComponent.swift in Sources */,
 				2B6B95AF271351B3003CC015 /* BaseView.swift in Sources */,
 				2B6B95B3271353A0003CC015 /* GenericBaseView.swift in Sources */,
 				2B6B95B1271351F6003CC015 /* BaseViewController.swift in Sources */,
+				2B6B95F72713F12A003CC015 /* LabelDistributionData.swift in Sources */,
 				2B6B95AA27135080003CC015 /* MainViewController.swift in Sources */,
 				2B6B95E42713E256003CC015 /* GenericDataProtocol.swift in Sources */,
 				2B6B95CA2713B274003CC015 /* FavoriteViewModel.swift in Sources */,
