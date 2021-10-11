@@ -21,6 +21,7 @@ class ItemListView: BaseView {
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.delegate = self
         temp.dataSource = self
+        temp.register(ItemTableViewCell.self, forCellReuseIdentifier: ItemTableViewCell.identifier)
         return temp
     }()
     override func addMajorViewComponents() {
@@ -49,9 +50,11 @@ extension ItemListView: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let data = delegate?.askData(at: indexPath.row) else {fatalError("Provide Data Man")}
         
-        
-        return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ItemTableViewCell.identifier,for: indexPath) as? ItemTableViewCell else{return UITableViewCell()}
+        cell.setData(by: data)
+        return cell
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return delegate?.askNumberOfItem(in: section) ?? 0

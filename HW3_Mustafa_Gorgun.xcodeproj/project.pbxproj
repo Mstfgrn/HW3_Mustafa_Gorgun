@@ -42,6 +42,13 @@
 		2B6B95FE2713F2B9003CC015 /* LabelDistributionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B95FB2713F2B9003CC015 /* LabelDistributionData.swift */; };
 		2B6B95FF2713F2B9003CC015 /* LabelPackComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B95FC2713F2B9003CC015 /* LabelPackComponentData.swift */; };
 		2B6B96002713F2B9003CC015 /* LabelPackComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B95FD2713F2B9003CC015 /* LabelPackComponent.swift */; };
+		2B6B96062713F33E003CC015 /* CustomImageViewComponentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B96022713F33E003CC015 /* CustomImageViewComponentContainer.swift */; };
+		2B6B96072713F33E003CC015 /* CustomImageViewComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B96032713F33E003CC015 /* CustomImageViewComponentData.swift */; };
+		2B6B96082713F33E003CC015 /* CustomImageViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B96042713F33E003CC015 /* CustomImageViewComponent.swift */; };
+		2B6B96092713F33E003CC015 /* CustomImageLoadingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B96052713F33E003CC015 /* CustomImageLoadingType.swift */; };
+		2B6B960C2713F38F003CC015 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B960B2713F38F003CC015 /* FontManager.swift */; };
+		2B6B96102713F446003CC015 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B960F2713F446003CC015 /* ImageCacheManager.swift */; };
+		2B6B96122713F5C0003CC015 /* ItemTableViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B96112713F5C0003CC015 /* ItemTableViewCellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +107,13 @@
 		2B6B95FB2713F2B9003CC015 /* LabelDistributionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelDistributionData.swift; sourceTree = "<group>"; };
 		2B6B95FC2713F2B9003CC015 /* LabelPackComponentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelPackComponentData.swift; sourceTree = "<group>"; };
 		2B6B95FD2713F2B9003CC015 /* LabelPackComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelPackComponent.swift; sourceTree = "<group>"; };
+		2B6B96022713F33E003CC015 /* CustomImageViewComponentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageViewComponentContainer.swift; sourceTree = "<group>"; };
+		2B6B96032713F33E003CC015 /* CustomImageViewComponentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageViewComponentData.swift; sourceTree = "<group>"; };
+		2B6B96042713F33E003CC015 /* CustomImageViewComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageViewComponent.swift; sourceTree = "<group>"; };
+		2B6B96052713F33E003CC015 /* CustomImageLoadingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageLoadingType.swift; sourceTree = "<group>"; };
+		2B6B960B2713F38F003CC015 /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		2B6B960F2713F446003CC015 /* ImageCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
+		2B6B96112713F5C0003CC015 /* ItemTableViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCellData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +165,7 @@
 		2B6B95742712498C003CC015 /* HW3_Mustafa_Gorgun */ = {
 			isa = PBXGroup;
 			children = (
+				2B6B960D2713F425003CC015 /* Manager */,
 				2B6B95DA2713CD80003CC015 /* Components */,
 				2B6B95BE2713AFF2003CC015 /* Utilities */,
 				2B6B95BD2713AF08003CC015 /* Temp */,
@@ -238,6 +253,7 @@
 		2B6B95BE2713AFF2003CC015 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2B6B960A2713F38F003CC015 /* FontManagers */,
 				2B6B95C12713B026003CC015 /* AssetHelpers */,
 			);
 			path = Utilities;
@@ -274,6 +290,7 @@
 		2B6B95DA2713CD80003CC015 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2B6B96012713F33E003CC015 /* CustomImageViewComponent */,
 				2B6B95FA2713F2B9003CC015 /* LabelPackComponent */,
 				2B6B95E52713E9BA003CC015 /* ItemComponents */,
 				2B6B95DE2713D355003CC015 /* SampleTest */,
@@ -303,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				2B6B95E62713E9DB003CC015 /* ItemTableViewCell.swift */,
+				2B6B96112713F5C0003CC015 /* ItemTableViewCellData.swift */,
 			);
 			path = ItemComponents;
 			sourceTree = "<group>";
@@ -315,6 +333,41 @@
 				2B6B95FD2713F2B9003CC015 /* LabelPackComponent.swift */,
 			);
 			path = LabelPackComponent;
+			sourceTree = "<group>";
+		};
+		2B6B96012713F33E003CC015 /* CustomImageViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B96022713F33E003CC015 /* CustomImageViewComponentContainer.swift */,
+				2B6B96032713F33E003CC015 /* CustomImageViewComponentData.swift */,
+				2B6B96042713F33E003CC015 /* CustomImageViewComponent.swift */,
+				2B6B96052713F33E003CC015 /* CustomImageLoadingType.swift */,
+			);
+			path = CustomImageViewComponent;
+			sourceTree = "<group>";
+		};
+		2B6B960A2713F38F003CC015 /* FontManagers */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B960B2713F38F003CC015 /* FontManager.swift */,
+			);
+			path = FontManagers;
+			sourceTree = "<group>";
+		};
+		2B6B960D2713F425003CC015 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B960E2713F446003CC015 /* CacheManagers */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2B6B960E2713F446003CC015 /* CacheManagers */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B960F2713F446003CC015 /* ImageCacheManager.swift */,
+			);
+			path = CacheManagers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,7 +510,9 @@
 				2B6B95762712498C003CC015 /* AppDelegate.swift in Sources */,
 				2B6B95BA2713A760003CC015 /* MainTabBarController.swift in Sources */,
 				2B6B95B727138FE4003CC015 /* TestViewController.swift in Sources */,
+				2B6B96092713F33E003CC015 /* CustomImageLoadingType.swift in Sources */,
 				2B6B95D52713C75F003CC015 /* CharacterListViewController.swift in Sources */,
+				2B6B96082713F33E003CC015 /* CustomImageViewComponent.swift in Sources */,
 				2B6B95E02713D369003CC015 /* SampleTest.swift in Sources */,
 				2B6B95C82713B255003CC015 /* FavoriteViewController.swift in Sources */,
 				2B6B95E72713E9DB003CC015 /* ItemTableViewCell.swift in Sources */,
@@ -465,11 +520,16 @@
 				2B6B95C32713B03A003CC015 /* TabBarImages.swift in Sources */,
 				2B6B95D92713C7B8003CC015 /* CharacterListViewModel.swift in Sources */,
 				2B6B95B5271353C1003CC015 /* GenericValueProtocol.swift in Sources */,
+				2B6B96072713F33E003CC015 /* CustomImageViewComponentData.swift in Sources */,
 				2B6B95E22713E0BB003CC015 /* ItemListProtocol.swift in Sources */,
 				2B6B95D72713C78E003CC015 /* CharacterListViewBuilder.swift in Sources */,
 				2B6B95BC2713A849003CC015 /* MainTabBarBuilder.swift in Sources */,
+				2B6B960C2713F38F003CC015 /* FontManager.swift in Sources */,
 				2B6B95FF2713F2B9003CC015 /* LabelPackComponentData.swift in Sources */,
 				2B6B95CC2713B29A003CC015 /* FavoriteViewBuilder.swift in Sources */,
+				2B6B96062713F33E003CC015 /* CustomImageViewComponentContainer.swift in Sources */,
+				2B6B96122713F5C0003CC015 /* ItemTableViewCellData.swift in Sources */,
+				2B6B96102713F446003CC015 /* ImageCacheManager.swift in Sources */,
 				2B6B95DD2713CDC2003CC015 /* ItemListView.swift in Sources */,
 				2B6B95A827134F63003CC015 /* MainViewModel.swift in Sources */,
 				2B6B96002713F2B9003CC015 /* LabelPackComponent.swift in Sources */,
