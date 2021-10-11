@@ -159,6 +159,7 @@
 			);
 			path = HW3_Mustafa_Gorgun;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		2B6B958B27124990003CC015 /* HW3_Mustafa_GorgunTests */ = {
 			isa = PBXGroup;
