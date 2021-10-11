@@ -41,15 +41,24 @@ class MainViewController: BaseViewController<MainViewModel> {
     //Window -> NavigationController ->MainViewController(This Class) -> Button -> TestViewController
     @objc func testButtonAction(_ sender: UIButton){
         print("Push Pressed ")
-        let viewController = TestViewController()
-        viewController.title = "MainViewController"
+        fireCharacterListView()
+        //let viewController = TestViewController()
+        //viewController.title = "MainViewController"
         //Navigation Controller include array component [0,1,2,3,]
         //self.navigationController?.viewControllers -> this component can many viewController
         //self.navigationController?.popToViewController(UIViewController, animated: Bool) -> Thanks to the popviewController function, we can choose the index we want among the indexes.
-        let navigationMainViewController = UINavigationController(rootViewController: viewController)
-        navigationMainViewController.navigationBar.backgroundColor = .red
+       // let navigationMainViewController = UINavigationController(rootViewController: viewController)
+        //navigationMainViewController.navigationBar.backgroundColor = .red
         //self.navigationController?.pushViewController(viewController , animated: true)
-        self.present(navigationMainViewController, animated: true, completion: nil) //-> This different of presentation like a permission page on week2
+        //self.present(navigationMainViewController, animated: true, completion: nil) //-> This different of presentation like a permission page on week2
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    private func fireCharacterListView() {
+        let characterListView = CharacterListViewBuilder.builder()
+        self.navigationController?.pushViewController(characterListView, animated: true)
     }
     
 }
