@@ -26,6 +26,7 @@ class ItemListView: BaseView {
     }()
     override func addMajorViewComponents() {
         super.addMajorViewComponents()
+        addTableView()
     }
     func addTableView(){
         self.addSubview(tableView)
@@ -46,22 +47,24 @@ class ItemListView: BaseView {
     
 }
 
-extension ItemListView: UITableViewDelegate, UITableViewDataSource{
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let data = delegate?.askData(at: indexPath.row) else {fatalError("Provide Data Man")}
-        
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: ItemTableViewCell.identifier,for: indexPath) as? ItemTableViewCell else{return UITableViewCell()}
-        cell.setData(by: data)
-        return cell
-    }
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return delegate?.askNumberOfItem(in: section) ?? 0
-    }
+extension ItemListView: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return delegate?.askNumberOfSection() ?? 0
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return delegate?.askNumberOfItem(in: section) ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let data = delegate?.askData(at: indexPath.row) else { fatalError("Please provide data man") }
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ItemTableViewCell.identifier, for: indexPath) as? ItemTableViewCell else { return UITableViewCell() }
+        
+        cell.setData(by: data)
+        
+        return cell
+    }
 }

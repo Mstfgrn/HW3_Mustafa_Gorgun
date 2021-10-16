@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class CharacterListViewBuilder {
-    class func builder() -> UIViewController {
+    class func build() -> UIViewController {
         let viewModel = CharacterListViewModel()
         let viewController = CharacterListViewController(viewModel: viewModel)
         return viewController

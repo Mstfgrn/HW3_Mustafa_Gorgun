@@ -11,6 +11,9 @@ class CharacterListViewController: BaseViewController<CharacterListViewModel> {
     
     private var mainComponent: ItemListView!
     //private var mainComponent: SampleTest!
+    deinit {
+        print("DEINIT CharacterListViewModel")
+    }
 
     
     override func prepareViewControllerConfigurations() {

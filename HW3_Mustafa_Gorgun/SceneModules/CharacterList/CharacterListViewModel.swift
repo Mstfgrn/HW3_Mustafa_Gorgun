@@ -16,7 +16,7 @@ extension CharacterListViewModel: ItemListProtocol{
     }
     
     func askNumberOfItem(in section: Int) -> Int {
-        return 100
+        return 0
     }
     
     func askData(at index: Int) -> GenericDataProtocol? {

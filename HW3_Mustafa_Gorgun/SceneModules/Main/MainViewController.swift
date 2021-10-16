@@ -40,7 +40,7 @@ class MainViewController: BaseViewController<MainViewModel> {
     //Test Func calls TestViewController, which is a new type of controller for testing dthe button of action.
     //Window -> NavigationController ->MainViewController(This Class) -> Button -> TestViewController
     @objc func testButtonAction(_ sender: UIButton){
-        print("Push Pressed ")
+       // print("Push Pressed ")
         fireCharacterListView()
         //let viewController = TestViewController()
         //viewController.title = "MainViewController"
@@ -57,7 +57,7 @@ class MainViewController: BaseViewController<MainViewModel> {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     private func fireCharacterListView() {
-        let characterListView = CharacterListViewBuilder.builder()
+        let characterListView = CharacterListViewBuilder.build()
         self.navigationController?.pushViewController(characterListView, animated: true)
     }
     
