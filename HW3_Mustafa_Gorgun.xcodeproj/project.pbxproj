@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B525D252724D29200255CA5 /* MakeCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B525D242724D29200255CA5 /* MakeCharactersResponse.swift */; };
+		2B525D272724FDB000255CA5 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B525D262724FDB000255CA5 /* ServiceProvider.swift */; };
 		2B6B95762712498C003CC015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B95752712498C003CC015 /* AppDelegate.swift */; };
 		2B6B95782712498D003CC015 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B95772712498D003CC015 /* SceneDelegate.swift */; };
 		2B6B957A2712498D003CC015 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B95792712498D003CC015 /* ViewController.swift */; };
@@ -69,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B525D242724D29200255CA5 /* MakeCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCharactersResponse.swift; sourceTree = "<group>"; };
+		2B525D262724FDB000255CA5 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		2B6B95722712498C003CC015 /* HW3_Mustafa_Gorgun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW3_Mustafa_Gorgun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6B95752712498C003CC015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B6B95772712498D003CC015 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 		2B6B95742712498C003CC015 /* HW3_Mustafa_Gorgun */ = {
 			isa = PBXGroup;
 			children = (
+				2BAF8F902721B2150060D696 /* Models */,
 				2B6B960D2713F425003CC015 /* Manager */,
 				2B6B95DA2713CD80003CC015 /* Components */,
 				2B6B95BE2713AFF2003CC015 /* Utilities */,
@@ -370,6 +375,23 @@
 			path = CacheManagers;
 			sourceTree = "<group>";
 		};
+		2BAF8F902721B2150060D696 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BAF8F912721B2260060D696 /* MekaSample */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2BAF8F912721B2260060D696 /* MekaSample */ = {
+			isa = PBXGroup;
+			children = (
+				2B525D242724D29200255CA5 /* MakeCharactersResponse.swift */,
+				2B525D262724FDB000255CA5 /* ServiceProvider.swift */,
+			);
+			path = MekaSample;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -510,6 +532,7 @@
 				2B6B95762712498C003CC015 /* AppDelegate.swift in Sources */,
 				2B6B95BA2713A760003CC015 /* MainTabBarController.swift in Sources */,
 				2B6B95B727138FE4003CC015 /* TestViewController.swift in Sources */,
+				2B525D272724FDB000255CA5 /* ServiceProvider.swift in Sources */,
 				2B6B96092713F33E003CC015 /* CustomImageLoadingType.swift in Sources */,
 				2B6B95D52713C75F003CC015 /* CharacterListViewController.swift in Sources */,
 				2B6B96082713F33E003CC015 /* CustomImageViewComponent.swift in Sources */,
@@ -523,6 +546,7 @@
 				2B6B96072713F33E003CC015 /* CustomImageViewComponentData.swift in Sources */,
 				2B6B95E22713E0BB003CC015 /* ItemListProtocol.swift in Sources */,
 				2B6B95D72713C78E003CC015 /* CharacterListViewBuilder.swift in Sources */,
+				2B525D252724D29200255CA5 /* MakeCharactersResponse.swift in Sources */,
 				2B6B95BC2713A849003CC015 /* MainTabBarBuilder.swift in Sources */,
 				2B6B960C2713F38F003CC015 /* FontManager.swift in Sources */,
 				2B6B95FF2713F2B9003CC015 /* LabelPackComponentData.swift in Sources */,

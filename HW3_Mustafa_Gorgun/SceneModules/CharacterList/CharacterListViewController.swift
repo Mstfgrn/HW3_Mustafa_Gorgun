@@ -16,6 +16,7 @@ class CharacterListViewController: BaseViewController<CharacterListViewModel> {
     override func prepareViewControllerConfigurations() {
         super.prepareViewControllerConfigurations()
         addItemListView()
+        viewModel?.getCharacterList()
         
     }
     override func viewWillAppear(_ animated: Bool) {
