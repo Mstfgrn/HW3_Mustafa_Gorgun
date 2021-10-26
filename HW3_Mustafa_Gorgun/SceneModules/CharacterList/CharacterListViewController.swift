@@ -16,6 +16,7 @@ class CharacterListViewController: BaseViewController<CharacterListViewModel> {
     override func prepareViewControllerConfigurations() {
         super.prepareViewControllerConfigurations()
         addItemListView()
+        subscribeViewModelListeners()
         viewModel?.getCharacterList()
         
     }
@@ -43,6 +44,20 @@ class CharacterListViewController: BaseViewController<CharacterListViewModel> {
         
         ])
     }
+    private func subscribeViewModelListeners() {
+            
+        viewModel?.subscribeState { [weak self] state in
+                switch state {
+                case .done:
+                    print("data is ready")
+                    self?.mainComponent.reloadTableView()
+                case .loading:
+                    print("data is getting")
+                case .failure:
+                    print("errror")
+                }
+            }
+        }
 }
 //MARK: These Comment send mainComponent
     /*lazy var tableView: UITableView = {

@@ -10,7 +10,8 @@ import UIKit
 
 class CharacterListViewBuilder {
     class func builder() -> UIViewController {
-        let viewModel = CharacterListViewModel()
+        let characterlistFormater = CharacterLDataFormater()
+        let viewModel = CharacterListViewModel(formatter: characterlistFormater)
         let viewController = CharacterListViewController(viewModel: viewModel)
         return viewController
     }

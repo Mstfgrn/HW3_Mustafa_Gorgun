@@ -8,16 +8,16 @@
 import Foundation
 
 public struct CharactersDataResponse: Codable {
-    let assets: [Asset]?
+    let assets: [Asset]
 }
 
 // MARK: - Asset
 struct Asset: Codable {
     let id: Int?
     let tokenID: String?
-    let imageURL, imagePreviewURL, imageThumbnailURL: String?
+    let imageURL, imagePreviewURL, imageThumbnailURL: String
     let imageOriginalURL: String?
-    let name: String?
+    let name: String
     let assetContract: AssetContract?
     let sellOrders: [SellOrder]?
 

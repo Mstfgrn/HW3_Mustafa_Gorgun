@@ -51,6 +51,10 @@
 		2B6B960C2713F38F003CC015 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B960B2713F38F003CC015 /* FontManager.swift */; };
 		2B6B96102713F446003CC015 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B960F2713F446003CC015 /* ImageCacheManager.swift */; };
 		2B6B96122713F5C0003CC015 /* ItemTableViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B96112713F5C0003CC015 /* ItemTableViewCellData.swift */; };
+		2BCDFA8427271102009F5709 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCDFA8327271102009F5709 /* BaseRequest.swift */; };
+		2BCDFAC427271EE1009F5709 /* CharacterListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCDFAC327271EE1009F5709 /* CharacterListViewState.swift */; };
+		2BCDFB3E272763A6009F5709 /* CharacterDataFormatterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCDFB3D272763A6009F5709 /* CharacterDataFormatterProtocol.swift */; };
+		2BCDFB402727674B009F5709 /* CharacterLDataFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCDFB3F2727674B009F5709 /* CharacterLDataFormater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +122,10 @@
 		2B6B960B2713F38F003CC015 /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		2B6B960F2713F446003CC015 /* ImageCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
 		2B6B96112713F5C0003CC015 /* ItemTableViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCellData.swift; sourceTree = "<group>"; };
+		2BCDFA8327271102009F5709 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		2BCDFAC327271EE1009F5709 /* CharacterListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewState.swift; sourceTree = "<group>"; };
+		2BCDFB3D272763A6009F5709 /* CharacterDataFormatterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDataFormatterProtocol.swift; sourceTree = "<group>"; };
+		2BCDFB3F2727674B009F5709 /* CharacterLDataFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLDataFormater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +296,9 @@
 				2B6B95D42713C75F003CC015 /* CharacterListViewController.swift */,
 				2B6B95D62713C78E003CC015 /* CharacterListViewBuilder.swift */,
 				2B6B95D82713C7B8003CC015 /* CharacterListViewModel.swift */,
+				2BCDFAC327271EE1009F5709 /* CharacterListViewState.swift */,
+				2BCDFB3D272763A6009F5709 /* CharacterDataFormatterProtocol.swift */,
+				2BCDFB3F2727674B009F5709 /* CharacterLDataFormater.swift */,
 			);
 			path = CharacterList;
 			sourceTree = "<group>";
@@ -388,6 +399,7 @@
 			children = (
 				2B525D242724D29200255CA5 /* MakeCharactersResponse.swift */,
 				2B525D262724FDB000255CA5 /* ServiceProvider.swift */,
+				2BCDFA8327271102009F5709 /* BaseRequest.swift */,
 			);
 			path = MekaSample;
 			sourceTree = "<group>";
@@ -532,6 +544,7 @@
 				2B6B95762712498C003CC015 /* AppDelegate.swift in Sources */,
 				2B6B95BA2713A760003CC015 /* MainTabBarController.swift in Sources */,
 				2B6B95B727138FE4003CC015 /* TestViewController.swift in Sources */,
+				2BCDFAC427271EE1009F5709 /* CharacterListViewState.swift in Sources */,
 				2B525D272724FDB000255CA5 /* ServiceProvider.swift in Sources */,
 				2B6B96092713F33E003CC015 /* CustomImageLoadingType.swift in Sources */,
 				2B6B95D52713C75F003CC015 /* CharacterListViewController.swift in Sources */,
@@ -539,6 +552,7 @@
 				2B6B95E02713D369003CC015 /* SampleTest.swift in Sources */,
 				2B6B95C82713B255003CC015 /* FavoriteViewController.swift in Sources */,
 				2B6B95E72713E9DB003CC015 /* ItemTableViewCell.swift in Sources */,
+				2BCDFA8427271102009F5709 /* BaseRequest.swift in Sources */,
 				2B6B95782712498D003CC015 /* SceneDelegate.swift in Sources */,
 				2B6B95C32713B03A003CC015 /* TabBarImages.swift in Sources */,
 				2B6B95D92713C7B8003CC015 /* CharacterListViewModel.swift in Sources */,
@@ -546,10 +560,12 @@
 				2B6B96072713F33E003CC015 /* CustomImageViewComponentData.swift in Sources */,
 				2B6B95E22713E0BB003CC015 /* ItemListProtocol.swift in Sources */,
 				2B6B95D72713C78E003CC015 /* CharacterListViewBuilder.swift in Sources */,
+				2BCDFB402727674B009F5709 /* CharacterLDataFormater.swift in Sources */,
 				2B525D252724D29200255CA5 /* MakeCharactersResponse.swift in Sources */,
 				2B6B95BC2713A849003CC015 /* MainTabBarBuilder.swift in Sources */,
 				2B6B960C2713F38F003CC015 /* FontManager.swift in Sources */,
 				2B6B95FF2713F2B9003CC015 /* LabelPackComponentData.swift in Sources */,
+				2BCDFB3E272763A6009F5709 /* CharacterDataFormatterProtocol.swift in Sources */,
 				2B6B95CC2713B29A003CC015 /* FavoriteViewBuilder.swift in Sources */,
 				2B6B96062713F33E003CC015 /* CustomImageViewComponentContainer.swift in Sources */,
 				2B6B96122713F5C0003CC015 /* ItemTableViewCellData.swift in Sources */,
