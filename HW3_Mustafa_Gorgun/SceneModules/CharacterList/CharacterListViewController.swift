@@ -17,7 +17,7 @@ class CharacterListViewController: BaseViewController<CharacterListViewModel> {
         super.prepareViewControllerConfigurations()
         addItemListView()
         subscribeViewModelListeners()
-        viewModel?.getCharacterList()
+        viewModel.getCharacterList()
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -46,7 +46,7 @@ class CharacterListViewController: BaseViewController<CharacterListViewModel> {
     }
     private func subscribeViewModelListeners() {
             
-        viewModel?.subscribeState { [weak self] state in
+        viewModel.subscribeState { [weak self] state in
                 switch state {
                 case .done:
                     print("data is ready")

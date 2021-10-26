@@ -28,7 +28,7 @@ class CharacterListViewModel {
     }
     func getCharacterList(){
         state?(.loading)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3){ [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2){ [weak self] in
             self?.fireApiCall{ [weak self] result in
                 switch result{
                 case .success(let response):

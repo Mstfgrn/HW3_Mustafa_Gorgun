@@ -9,7 +9,7 @@ import UIKit
 
 class BaseViewController<T>: UIViewController {
     
-    var viewModel: T?
+    var viewModel: T!
     
     convenience init(viewModel: T) {
         self.init()
