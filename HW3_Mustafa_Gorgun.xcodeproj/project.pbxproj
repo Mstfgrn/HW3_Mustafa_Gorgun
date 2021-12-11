@@ -180,6 +180,7 @@
 				2BAF8F902721B2150060D696 /* Models */,
 				2B6B960D2713F425003CC015 /* Manager */,
 				2B6B95DA2713CD80003CC015 /* Components */,
+				2B6B95DB2713CDA0003CC015 /* ItemListViewComponents */,
 				2B6B95BE2713AFF2003CC015 /* Utilities */,
 				2B6B95BD2713AF08003CC015 /* Temp */,
 				2B6B95AD27135195003CC015 /* BaseComponents */,
@@ -310,7 +311,6 @@
 				2B6B95FA2713F2B9003CC015 /* LabelPackComponent */,
 				2B6B95E52713E9BA003CC015 /* ItemComponents */,
 				2B6B95DE2713D355003CC015 /* SampleTest */,
-				2B6B95DB2713CDA0003CC015 /* ItemListViewComponents */,
 			);
 			path = Components;
 			sourceTree = "<group>";
